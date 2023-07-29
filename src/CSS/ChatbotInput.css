@@ -1,0 +1,30 @@
+/* .chatbot-input {
+    border: solid red 2px;
+
+} */
+  
+.chatbot-input form {
+    display: flex;
+    /* column-gap: 5px; */
+    /* border: solid blue 2px; */
+    height: 100%;
+    box-sizing: border-box;
+}
+  
+.chatbot-input textarea {
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: black 1px solid;
+    padding: 15px;
+}
+  
+.chatbot-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+.chatbot-input button{
+    padding: 10px;
+}

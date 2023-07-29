@@ -1,0 +1,13 @@
+.chatbot-conversation{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+    /* border: solid black 2px; */
+}
+.response{
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+}

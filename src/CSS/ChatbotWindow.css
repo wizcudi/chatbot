@@ -1,0 +1,9 @@
+
+.chatbot-window {
+    display: grid;
+    grid-template-rows: 80% 20%; /* Set the row proportions */
+    background-color: rgb(215, 215, 215); 
+    /* border: solid black 2px; */
+    padding: 10px;
+    
+}

@@ -1,0 +1,9 @@
+.chatbot{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    height: 100%; 
+}
+.chatbot-navigation{
+    /* border: solid black 2px; */
+    padding: 10px; 
+}
