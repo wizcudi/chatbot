@@ -1,3 +1,4 @@
+// /CHATBOT/src/App.js 
 import './App.css';
 import Chatbot from './components/Chatbot';
 
@@ -10,4 +11,5 @@ function App() {
 }
 
 export default App;
+
 

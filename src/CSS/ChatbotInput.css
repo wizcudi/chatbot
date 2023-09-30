@@ -1,21 +1,25 @@
-/* .chatbot-input {
-    border: solid red 2px;
-
-} */
-  
+.chatbot-input {
+    /* border: solid red 2px; */
+    height: 100%;
+}
+form{
+    height: 100%;
+    /* border: black solid 2px; */
+}
 .chatbot-input form {
     display: flex;
     /* column-gap: 5px; */
     /* border: solid blue 2px; */
-    height: 100%;
+    /* height: 100%; */
     box-sizing: border-box;
 }
   
 .chatbot-input textarea {
+    height: 100%;
     width: 90%;
     box-sizing: border-box;
-    border-radius: 10px;
-    border: black 1px solid;
+    /* border-radius: 10px; */
+    /* border: black 1px solid; */
     padding: 15px;
 }
   
@@ -23,8 +27,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10%;
+    width: 20%;
+    padding: 20px;
 }
 .chatbot-input button{
-    padding: 10px;
+    background-color: rgb(195, 18, 18);
+    color: whitesmoke;
+    font-size: 20px;
+    letter-spacing: 1px;
+    /* border: solid rgb(3, 3, 3) 3px; */
+    border: none;
+    text-transform: uppercase;
+    border-radius: 7px;
+    padding: 17px 10px;
+    width: 100%;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
 }

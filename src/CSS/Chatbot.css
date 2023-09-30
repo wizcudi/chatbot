@@ -1,9 +1,12 @@
 .chatbot{
-    display: grid;
-    grid-template-columns: 25% 75%;
+    display: flex;
+    /* grid-template-columns: 20% 80%; */
     height: 100%; 
+    width: 100%;
+    /* border: 3px black dashed; */
 }
 .chatbot-navigation{
-    /* border: solid black 2px; */
+    /* border: solid blue 2px; */
     padding: 10px; 
+    width: 30%;
 }

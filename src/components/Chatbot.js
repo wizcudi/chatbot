@@ -1,3 +1,5 @@
+
+// /CHATBOT/src/components/Chatbot.js 
 import React from 'react';
 import ChatbotWindow from './ChatbotWindow';
 import "../CSS/Chatbot.css"
@@ -14,4 +16,5 @@ const Chatbot = () => {
 }
 
 export default Chatbot;
+
 

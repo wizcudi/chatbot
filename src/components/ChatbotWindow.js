@@ -1,3 +1,5 @@
+
+// /CHATBOT/src/components/ChatbotWindow.js
 import React, { useState } from 'react';
 import "../CSS/ChatbotWindow.css"
 import ChatbotInput from "./ChatbotInput"
@@ -15,10 +17,14 @@ const ChatbotWindow = () => {
   return (
     <div className='chatbot-window'>
         <ChatbotConversation conversation={conversation} />
-        <ChatbotInput onNewMessage={handleNewMessage} />
+        <div className='window-input'>
+          <ChatbotInput onNewMessage={handleNewMessage} />
+        </div>
     </div>
   );
 }
 
 export default ChatbotWindow;
+
+
 

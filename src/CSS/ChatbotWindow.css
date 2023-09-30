@@ -1,9 +1,12 @@
 
 .chatbot-window {
-    display: grid;
-    grid-template-rows: 80% 20%; /* Set the row proportions */
-    background-color: rgb(215, 215, 215); 
-    /* border: solid black 2px; */
-    padding: 10px;
-    
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(45, 45, 45);
+    width: 100%;
+    padding: 5px;
+    row-gap: 5px;
+}
+.window-input{
+    min-height: 17%;
 }

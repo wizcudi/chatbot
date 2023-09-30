@@ -1,3 +1,5 @@
+
+// /CHATBOT/src/components/ChatbotInput.js
 import React, { useState } from 'react';
 import "../CSS/ChatbotInput.css";
 import axios from 'axios'; 
@@ -8,14 +10,21 @@ const ChatbotInput = ({onNewMessage}) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        // Add the user's message to the conversation
+        onNewMessage(`User: ${inputValue}`);
         // Send the user's message to the backend
         try {
-            const response = await axios.post('http://localhost:3080/chat', { message: inputValue });
+            
+            // const response = await axios.post('http://localhost:3080/chat', { message: inputValue });
+            
+            const response = await axios.post('/chat', { message: inputValue });
+            
             const botMessage = response.data.message;
             // Add the bot's response to the conversation
-            onNewMessage(botMessage);
+            onNewMessage(`Bot: ${botMessage}`);
         } catch (error) {
             console.error('Error sending message:', error);
+            console.log(error);
         }
         setInputValue('');
     }
@@ -37,4 +46,5 @@ const ChatbotInput = ({onNewMessage}) => {
 }
 
 export default ChatbotInput;
+
 
